@@ -1,0 +1,24 @@
+body {
+    background-color: skyblue;
+}
+
+h2 {
+    font-size: 30px;
+}
+.jumbotron {
+    font-size: 50px;
+    font-style: italic;
+}
+
+.column {
+    animation: animationWELCOMETOPIZZASHOP 2s infinite;
+}
+@keyframes animationWELCOMETOPIZZASHOP {
+    0%{color: red;}
+    25%{color: greenyellow;}
+    50%{color: #fff;}
+    100%{color: greenyellow;}
+}
+.jumbotron {
+    background-color: black;
+}

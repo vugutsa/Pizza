@@ -1,0 +1,84 @@
+{% extends 'base.html'%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title> {{ title }}</title>
+        {% else %}
+        <title> Welcome to the Pizza-shop</title>
+        {% endif %}
+
+            <!-- Styles block -->
+        {% block styles%}
+             {{ super() }}
+        <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+        {% endblock %}
+    </head>
+    <body>
+        {% block content %}
+        <div class="jumbotron">
+    <div class="welcome">
+     <h1  style="text-align: center; font-style: italic;"><span class="column">WELCOME TO PIZZA SHOP</span></h1>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+            <img src="../static/images/Beef-Doner-1-e1c2.jpg" alt="" width="75%">
+            <hr>
+            <h2>
+            Kebab pizza
+            </h2>
+            <hr>
+            </div>
+            <div class="col-md-4">
+            <img src="../static/images/download (1).jpeg" alt="" width="75%">
+            <hr>
+            <h2>
+            Cheese pizza
+            </h2>
+            <hr>
+        </div>
+         <div class="col-md-4">
+            <img src="../static/images/download.jpeg" alt="" width="75%">
+            <hr>
+            <h2>
+            Neapotilian pizza
+           </h2>
+            <hr>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="../static/images/download (3).jpeg" alt="" width="75%">
+            <hr>
+            <h2>
+            Chicago pizza
+           </h2>
+            <hr>
+            </div>
+            <div class="col-md-4">
+                <img src="../static/images/download (2).jpeg" alt="" width="75%" >
+                <hr>
+                <h2>
+                Pizza bagels
+               </h2>
+                <hr>
+            </div>
+            <div class="col-md-4">
+                <img src="../static/images/download (4).jpeg" alt="" width="75%">
+                <hr>
+                <h2>
+                Pepporoni pizza
+                </h2>
+                <hr>
+            </div>
+
+
+        </div> 
+            {% endblock%}
+        </div>
+    </body>
+</html>
