@@ -13,6 +13,7 @@
         {% block styles%}
              {{ super() }}
         <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         {% endblock %}
     </head>
     <body>
@@ -24,6 +25,29 @@
 </div>
 
     <div class="container">
+
+
+        <div class="about">
+            <h1 class="section">ABOUT US</h1>
+            <h3> "One bite of our delicious pizza will definately bring you back for more<br>It can remove your stress
+              of the day" </h3>
+            <p>The Pizza shop was build by some few stake-holders in 2020.We are based in
+              Greenspan mall in Ngong Road
+              3rd floor.We decided set up Pizza-Inn due to availability of market and plus the neighborhood is friendly.
+              In Pizza-Inn we offer quality service that cannot disappoint you in any kind of way,we can guarantee you that.
+              Our main idea of this restaurant is to provide you with any type of pizza of your choice.
+            </p>
+    
+
+
+
+        <i class="fa fa-cart-plus" aria-hidden="true" style="font-size:48px;color:rgb(209, 203, 203)" ></i>
+        <br>
+        
+        <p>Click to add pizza on your cart:</p>
+        <button style="font-size:24px">Button <i class="fa fa-cart-plus"></i></button>
+
+
         <div class="row">
             <div class="col-md-4">
             <img src="../static/images/Beef-Doner-1-e1c2.jpg" alt="" width="75%">
@@ -71,7 +95,7 @@
                 <img src="../static/images/download (4).jpeg" alt="" width="75%">
                 <hr>
                 <h2>
-                Pepporoni pizza
+                Pepperoni pizza
                 </h2>
                 <hr>
             </div>

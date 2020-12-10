@@ -13,3 +13,4 @@ def index():
     title = 'Home - Welcome to the Pizza-shop'
     images = 'img1.jpeg'
     return render_template('index.html', title = title, images = images)
+
